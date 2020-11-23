@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Nov 2020 05:44:55 GMT</lastBuildDate><item><title><![CDATA[새로운 시작]]></title><description><![CDATA[Hexo와 Wordpress를 버리다 2017년 잠시 동안 영어 공부에 전념할 당시 markdown 기반의 static page generator 중 하나인 hexo…]]></description><link>https://soopdop.github.io/new-beginnings/</link><guid isPermaLink="false">https://soopdop.github.io/new-beginnings/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Nov 2020 17:01:12 GMT</lastBuildDate><item><title><![CDATA[Gatsby에 구글 한글 폰트를 입히자]]></title><description><![CDATA[이 포스팅에서는 에서 기본적으로 설정되어 있는 폰트를 구글 폰트로 바꾸는 과정을 설명한다. 는 국내에서 만들어진 것이 아니기 때문에 당연하게도 한글 폰트가 설정되어 있지 않다. 윈도우 사용자라면 Serif 계열은 바탕체, Sans…]]></description><link>https://soopdop.github.io/2020/11/24/change-font-in-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/24/change-font-in-gatsby/</guid><pubDate>Mon, 23 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 619px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/424a314dd092ef335b3eb1509a780278/e628c/my-first-gatsby.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 86.70886075949367%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABXklEQVQ4y7WSOW/CMBSA+Zn9B/wKBkBqODp0BjGwICRUiYkIlXQg7YSEurRqmRCFluAkdpzLcRzTxzGUXoJUfbL8ZPt973Rm/QfJ7JSmafV6vd/vq6qq6/poNKpWq3DZbDZbrZa+lUKh0Gg0wGY8Hh/Ag4F2rii5XK5WqymK0uup7Xa7UqkUi0UAOp1Ot9stl8ulUimbzebzeUCklJmvyXAewcNPqQohGGMHkQkTD5YXBCG2se8HlLq2bWNCLGujYWcsSpIESNg/13x1Ozy7uDQcQokDECYOQiZwyLQ2R0yiiO8s5VYO4Nl8enOtyrVM0+291w+Ofyn7ezjlnGeI9u5nd89vTwt7+Lh4sbxjgu9hxw0mc3NqEOIzEkSMixMih2Hou27ge5zzk9OmlC4NtEIwUSxlum7LVKMSsdgJ5zFkzuM4igUXyVEwfEz4hrCM1co0zSWyJq94ib1/nPM7+LnHKDqH4AIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;my first gatsby&quot;
+        title=&quot;my first gatsby&quot;
+        src=&quot;/static/424a314dd092ef335b3eb1509a780278/e628c/my-first-gatsby.png&quot;
+        srcset=&quot;/static/424a314dd092ef335b3eb1509a780278/c26ae/my-first-gatsby.png 158w,
+/static/424a314dd092ef335b3eb1509a780278/6bdcf/my-first-gatsby.png 315w,
+/static/424a314dd092ef335b3eb1509a780278/e628c/my-first-gatsby.png 619w&quot;
+        sizes=&quot;(max-width: 619px) 100vw, 619px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이 포스팅에서는 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;에서 기본적으로 설정되어 있는 폰트를 구글 폰트로 바꾸는 과정을 설명한다. &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;는 국내에서 만들어진 것이 아니기 때문에 당연하게도 한글 폰트가 설정되어 있지 않다. 윈도우 사용자라면 Serif 계열은 바탕체, Sans 계열은 맑은 고딕으로 출력되고 있다. 또한 영어의 경우에도 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;가 사용하고 있는 &lt;code class=&quot;language-text&quot;&gt;Typefaces&lt;/code&gt; 플러그인과 그 설정에 의해 다소 무식해 보이는 제목 폰트가 보는 사람의 심기를 매우 불편하게 한다. &lt;/p&gt;
+&lt;h4&gt;Typography 플러그인을 설치한 뒤 빛의 속도로 삭제&lt;/h4&gt;
+&lt;p&gt;Gatsby의 공식 문서를 보면 &lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;Typography.js&lt;/a&gt;를 사용하는 예제를 보여준다. 반사적으로 &lt;code class=&quot;language-text&quot;&gt;Typography&lt;/code&gt; 플러그인을 설치한 이후에 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;에서도 이미 폰트 관련 플러그인 중 하나인 &lt;code class=&quot;language-text&quot;&gt;Typefaces&lt;/code&gt;가 사용되고 있음을 알게 되었다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Typography&lt;/code&gt;는 폰트과 함께 미리 정의된 스타일을 갖춘 여러 개의 테마를 제공하는 것이 장점이다. 게다가 &lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;예제 사이트&lt;/a&gt;를 통해서 테마, 행간, 폰트 사이즈 등의  수치 변경을 통해 예제 문서가 어떻게 변하는지 직접 눈으로 학인해 볼 수 있다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 181px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 261.39240506329116%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;typography panel&quot;
+        title=&quot;typography panel&quot;
+        src=&quot;/static/c0e8849a898e2d57a6e808e6e846cc09/74c4e/typography-panel.png&quot;
+        srcset=&quot;/static/c0e8849a898e2d57a6e808e6e846cc09/c26ae/typography-panel.png 158w,
+/static/c0e8849a898e2d57a6e808e6e846cc09/74c4e/typography-panel.png 181w&quot;
+        sizes=&quot;(max-width: 181px) 100vw, 181px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;하지만 꽤 매력적으로 보이는 &lt;code class=&quot;language-text&quot;&gt;Typography&lt;/code&gt;를 뒤로 하고 &lt;code class=&quot;language-text&quot;&gt;Typefaces&lt;/code&gt;를 선택했다. 아직 사용해 보지는 않았지만 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;가 선택했다면 무엇인가 이유가 있을 것이라고 생각했기 때문이다. &lt;/p&gt;
+&lt;h4&gt;Typefaces의 장점&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Typefaces&lt;/code&gt;의 눈에 띄는 점은 self-hosting 방식이라는 점이다. 즉 CDN에서 폰트를 읽어 오는 방식이 아니라 사이트 자체적으로 폰트를 제공한다는 것인데 여기에는 두 가지의 장점이 있다. &lt;/p&gt;
+&lt;p&gt;첫째, CDN을 이용하는 것보다 속도가 빠르다. 만든이에 따르면 모바일 환경에서는 1초 이상의 차이를 보인다고 한다. 언급된 테스트 한 환경이 3G라고는 하나, 국외에서는 네트워크 환경이 국내 만큰 좋지 않기 때문에 중요한 사실이다. &lt;/p&gt;
+&lt;p&gt;둘째, 사이트를 개발하는 dev server 환경에서도 미리보기를 위해서 CDN의 접속이 필요하다는 점이다. 이 점은 경우에 따라 상당한 불편함을 느낄 수 있는데, 만약 인터넷 접속이 안되는 환경(e.g. 비행기, 배, 기차 안 혹은 무인도)에서 문서 작성을 하고 싶다면 폰트 때문에 인터넷에 접속을 해야하고 그렇지 않다면 실제로 보여지는 모습이 아닌 바탕체, 굴림체를 보면서 작업을 해야 하기 때문에 꽤 짜증스러운 상황일 것이다.&lt;/p&gt;
+&lt;h4&gt;The Typefaces project is now deprecated&lt;/h4&gt;
+&lt;p&gt;이제 제대로된 &lt;code class=&quot;language-text&quot;&gt;Typefaces&lt;/code&gt;의 사용법을 알기위해 &lt;a href=&quot;https://github.com/KyleAMathews/typefaces&quot;&gt;Typefaces github&lt;/a&gt; 접속하자 마자 가자 위쪽에 이 프로젝트는 deprecated 되었다는 메세지가 나왔다. 당황하지 않은 척 침착하게 조금 더 읽어보니 &lt;a href=&quot;https://github.com/fontsource/fontsource&quot;&gt;Fontsource github&lt;/a&gt;로 연결이 되어 있었고, 거의 비슷하지만 조금 더 개선된 패키지라고 해서 안심하고 바로 설치했다.&lt;/p&gt;
+&lt;h4&gt;Fontsource 설치&lt;/h4&gt;
+&lt;p&gt;특정 폰트를 포함한 founsource 패키지를 설치 하기 위해서는 설치할 폰트를 결정해야 한다. 폰트 패키지는 친절하게도 잘 준비된 &lt;a href=&quot;https://fontsource.github.io/search-directory/&quot;&gt;search directory&lt;/a&gt;에서 찾을 수 있다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.75949367088608%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAACKUlEQVQoz12SSW8TQRCF53+xKQFsE2flAIIDChck/lVsxwHlGJQEIaQcwpYoRAiJA46dGXu8ZfbVM56x/ajqiS3jkj5Vd6n7Vb9SS67rIo5jYghgjLOfbTx+doSXb0+wuf0JG8TS00Pc2/ggeLB1iLvrBzPurB2g8OIYz998FlnSdR2+7yMMQ0TRAJru4MeFiq9nMr6dK4LT7zLtFXwhTk6vRNPzyy7REVz86uLyd09kyfNcRHEEjslkgjRNMB7FkK9rAtPo47rxF522DF3r4qr2h9z4fFo4WkQKgoBEUkyD7YfhAK1WC4rSRK/Xh+f5CIJQ1JMkJSdxRhzP1jyyiJDYbpok4nUctm1jMGDrpuDmxoCm2XBdT4im6UiIzsO1eDjEcHgryEwFDcMQ8zRMG5btwjQdeqUBy7JpbQksyxHZtilTXdN0ekRE4klmmQWY0WhEhy3RQJFl1Os1NBp19LodqKqKdrtNuQWVcrPJ4+ih3+/TeJoLgmSFbY7HY+psgmsqzZAP8mWuL8KO5vcsJiwHQfZlpmGSZRZUFBmNep0aZHvP8/6D/y874TXfnxPMLE9nyC8MqcazZPif6nqWxf62rmmamCvXWZQjmQmSXZ4fB3fm+WxuraJYzGFt/YnIxdU8VlZyyBceIld4NCNPLC3fx/brV8KJxAIefQnfz7o4jkOdTezvv8fubhl776qo7lVQrWZUKmVBuVIiaE1nSqUdHH88ov8Y4R8mzVaHIa7rJQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;fontsource search directory&quot;
+        title=&quot;fontsource search directory&quot;
+        src=&quot;/static/7f75d69046141976a2efdf23ecfed7e4/f058b/fontsource-search-directory.png&quot;
+        srcset=&quot;/static/7f75d69046141976a2efdf23ecfed7e4/c26ae/fontsource-search-directory.png 158w,
+/static/7f75d69046141976a2efdf23ecfed7e4/6bdcf/fontsource-search-directory.png 315w,
+/static/7f75d69046141976a2efdf23ecfed7e4/f058b/fontsource-search-directory.png 630w,
+/static/7f75d69046141976a2efdf23ecfed7e4/40601/fontsource-search-directory.png 945w,
+/static/7f75d69046141976a2efdf23ecfed7e4/0a867/fontsource-search-directory.png 986w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;설치 방법와 사용 법은 매우 간단하다. 설치할 폰트를 선택한 후, &lt;code class=&quot;language-text&quot;&gt;yarn&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;npm install&lt;/code&gt;로 다음과 같이 설치한다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; fontsource-open-sans 또는 
+$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; fontsource-open-sans&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 설치한 패키지는 &lt;code class=&quot;language-text&quot;&gt;gastby-browser.js&lt;/code&gt;에서 import 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;fontsource-open-sans&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그 후, 필요한 곳에서 font-family로 사용하기만 하면 된다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Open Sans&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;폰트가 제대로 설치가 되었고 웹사이트에 적용되었는지 확인하는 것은 매우 중요하다. 여러 종류의 한글 고딕체들이 있지만 미묘한 차이가 있을 뿐 매우 비슷하게 생겼기 때문에 시스템에서 기본적으로 보여주는 맑은 고딕을 보고 설치가 완료됐다고 착각할 수도 있기 때문이다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby build&lt;/code&gt;를 통해서 빌드한 결과물 중 &lt;code class=&quot;language-text&quot;&gt;./public/static&lt;/code&gt; 폴더 안에 &lt;code class=&quot;language-text&quot;&gt;noto-sans-kr-19-400-normal-a869833b8634a5505fa8a5c6848a377a.woff2&lt;/code&gt;와 같은 파일들 잔뜩 만들어져 있다면 폰트가 웹사이트와 함께 정상적으로 빌드가 완료되었고 self-hosted될 준비가 되었다는 뜻이다.&lt;/p&gt;
+&lt;p&gt;빌드된 폰트를 확인했다면 &lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt; 명령어로 dev server를 띄운 후 본문 혹은 헤더 글자를 inspect해 본다. 아래와 같이 Computed 탭으로 이동하여 가장 아래에 있는 Rendered Fonts가 본인이 원하는 폰트로 되어 있다면 성공이다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 470px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/10af8578315f73004cbcedf22441d858/f96db/chrome-devtools.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 87.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVQ4y41UaW/TQBDN//9DiNICRVDEJ6jSpm0uO7bjI77W5/qKH2+3aUgikBhpNF7vzts53uzEdV2kqYCz9WFubERJijAKEQQB4jiG53lQZ5RNkgSO42C73cK2LQS+B5EmWuuqQFHkmPg86IcCs6WLX08mLC/RDrvdjhel+lupAkq4VuB6rdVDnGSvmub6/ETKGrbjwrI9LFYbzGYvdPIwDD3yPEfXdej7Dl3bomkkWlqlSryoxdyqYPoSDysBzw8xEYnAcr7AZmNhZRgE36LtB0RxgjQrUMsGsu0gGwIPI7p+z/09v/eIsxbTdY4Ho8DMLJCKjCkvTWxfVnCelgjSCnEutYai0jrj3mxuwPFjJEVz3E+oUSaxS2v61doKBdhuHQys154NYJ64FJVeFEX4H8lzAspgh4zdSllsSdsyxU7VTNeuR13z9sCH7/sYx5GKgx1R1j2ykrWuBp2+TrklZWLbhv/ygoG16xhl0zRaVSNUYxSFwjDUIErerCg6RKIlWMcGyVfAgkANGyKNFRpSqAsj4OCgpCwLOLbDC9ozwPHkzKuM5CNpUy4WkORUtTEh3S06IbBnyuMRsCTv3D9uJ0Dqe39Yqwufn58PgKRKbZmoTAstG3AagSq0Svc0skvQV8AGj4+PTJmokjWUroM2TnXafVUdI1RpBGzKZaqX9ghYWxYaOjQsfJvEGA5TcEy5Kjnjm7OILvUMsCddeoLt2aGeqfV8AIYsw8gDqjkNa+jy0prdbkmlf4mimQaMrm8QvnuP+Pojss+3yG4+QVx9QPH1DvLnPbLvPxDcfoHLf97VNUeQoyjlmaroFL004Nw0YSwXWMznSDi/OaMT7LSqXcoG5bQ51zmftfLbHUruq86/aVEUqFhz9bRNp1NMHlcrGGsDG3LN9QP4TN8mjTxOhs+RDFgGoZw4Md399IyjpzJwINbrNSY7vnOhQcrQOWLxBSmUWDZSXlAQNOV+TbIrOlWqDIzmbymrSNU7+RuBMlwMjshOIAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;chrome devtools&quot;
+        title=&quot;chrome devtools&quot;
+        src=&quot;/static/10af8578315f73004cbcedf22441d858/f96db/chrome-devtools.png&quot;
+        srcset=&quot;/static/10af8578315f73004cbcedf22441d858/c26ae/chrome-devtools.png 158w,
+/static/10af8578315f73004cbcedf22441d858/6bdcf/chrome-devtools.png 315w,
+/static/10af8578315f73004cbcedf22441d858/f96db/chrome-devtools.png 470w&quot;
+        sizes=&quot;(max-width: 470px) 100vw, 470px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;글꼴 선택 시 Typography 예제 사이트를 활용하는 방법&lt;/h4&gt;
+&lt;p&gt;한글 글꼴의 수는 제한적이기 때문에 그 중 하나를 선택하는 것은 그리 어렵지가 않다. 하지만 한글 폰트에 포함된 영문 폰트가 아닌 별도의 영문 폰트를 사용하려 할 때, 수 많은 영문 폰트 중 하나를 선택하는 것은 꽤 어려운 일이다. &lt;/p&gt;
+&lt;p&gt;이 때, 위에서 소개한 &lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;Typography 예제 사이트&lt;/a&gt;가 유용하게 사용될 수 있다. 보통의 폰트 관련 사이트에서는 폰트를 보여주기 위해서 한 개 정도의 문장만 보여준다. 한 문장만을 보고 본문에 사용될 영문 폰트는 어렵다. 문장 하나가 괜찮아 보이는 것과 다수의 문단으로 이루어진 블로그 포스팅에서 각각의 문장들이 잘 어울어지는지의 여부는 별개의 문제이기 때문이다.&lt;/p&gt;
+&lt;p&gt;이 사이트에서 제공하는 예제의 본문 구조는 블로그 포스팅 형태이기 때문에 미리 정의된 테마를 교체 해 보면서 마음에 드는 폰트의 조합을 얻어 낼 수도 있고, 직접 폰트를 지정하여 실시간으로 바뀐 모습을 확인할 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[새로운 시작]]></title><description><![CDATA[최근 우연하게 Gatsby를 “발견”하고 그 것을 이용해서 블로그를 만들려고 한다. 그 과정을 기록으로 남기고자 한다.  Hexo와 Wordpress를 버린 이유 2017년 잠시 동안 밤낮으로 영어 공부에 전념할 당시 markdown…]]></description><link>https://soopdop.github.io/2020/11/23/new-beginnings/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/23/new-beginnings/</guid><pubDate>Sun, 22 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -29,10 +158,17 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;Hexo와 Wordpress를 버리다&lt;/h2&gt;
-&lt;p&gt;2017년 잠시 동안 영어 공부에 전념할 당시 markdown 기반의 static page generator 중 하나인 hexo을 이용했었다. 하지만 정보 전달을 목적으로 쓰는 블로그용이 아니라 매일 학습한 것을 기록하는 용도로서는 markdown으로 문서를 작성하는 것이 매우 번거로웠다.&lt;/p&gt;
-&lt;p&gt;그래서 한동안 NAS에 wordpress를 설치해서 사용하고 있었다. wordpress는 여전히 인기 있는 툴이고 웹 개발 지식이 전혀 없는 사람들에게는 다양한 설정으로 커스터마이즈된 웹 페이지를 만들어 주는 훌륭한 도구임에는 이견이 없다. 하지만 마음에 쏙 드는 테마와 플러그인을 찾는데 너무 많은 시간을 허비해야 했다.&lt;/p&gt;
-&lt;p&gt;어느정도 마음에 드는 테마와 플러그인을 발견했다 하더라도 버그가 있거나 현재 버전의 wordpress와의 버전 호환성 문제가 발목을 잡는 경우가 대부분이었다. 그렇다고 해서 마음에 들지 않는 부분을 일부 수정하는 행위는 최악이라는 사실을 zero board와 xpressengine을 통해서 경험 했기 때문에 스타일을 조금 수정하는 것 조차 꺼려질 수 밖에 없었다.&lt;/p&gt;
+&lt;p&gt;최근 우연하게 Gatsby를 “발견”하고 그 것을 이용해서 블로그를 만들려고 한다. 그 과정을 기록으로 남기고자 한다. &lt;/p&gt;
+&lt;h4&gt;Hexo와 Wordpress를 버린 이유&lt;/h4&gt;
+&lt;p&gt;2017년 잠시 동안 밤낮으로 영어 공부에 전념할 당시 markdown 기반의 static page generator 중 하나인 hexo을 이용했었다. 하지만 정보 전달을 목적으로 쓰는 블로그용이 아니라 매일 학습한 것을 기록하는 용도로서는 markdown으로 문서를 작성하는 것이 매우 번거로웠다.&lt;/p&gt;
+&lt;p&gt;현재는 집에 있는 NAS에 wordpress를 설치해서 개인적인 메모 공간으로 사용하고 있다. wordpress는 여전히 인기 있는 툴이고 웹 개발 지식이 전혀 없는 사람들에게는 다양한 설정으로 커스터마이즈된 웹 페이지를 만들어 주는 훌륭한 도구임에는 이견이 없다. 하지만 품질 좋고 마음에 드는 테마와 플러그인을 찾는데 너무 많은 시간을 허비해야 했다.&lt;/p&gt;
+&lt;p&gt;어느 정도 마음에 드는 테마와 플러그인을 발견하는데 있어서 타협점을 찾았다 하더라도 버그가 있거나 현재 버전의 wordpress와의 버전 호환성 문제가 발목을 잡는 경우가 대부분이었다. 그렇다고 해서 커스터마이징 목적으로 혹은 문제가 있는 부분을 수정하는 행위는 최악의 노가다를 발생시킨다는 사실을 zero board와 xpressengine을 통해서 경험 했기 때문에 스타일을 조금 수정하는 것 조차도 꺼려질 수 밖에 없었다.&lt;/p&gt;
+&lt;h4&gt;Gatsby를 발견하다&lt;/h4&gt;
+&lt;p&gt;리팩토링 책을 읽으면서 함수의 불변성이 리팩토링의 용이함과도 무관하지 않다는 것을 알게 되었다. 과거에도 함수의 불변성에 대해서 검색해본 적이 있지만 무슨 뜻인지 설명하는 글은 많아도 왜 그 것이 중요한지에 대하여 시원하게 설명해주는 글은 발견하지 못했다. 그래서 함수의 불변성에 대해서 쉽게 설명할 수 없을까 다시 고민하며 검색을 반복하던 중 한 블로그에서 —원래의 검색 목적과는 무관하게— Gatsby를 알게 됐다.&lt;/p&gt;
+&lt;p&gt;처음에는 무엇인지만 알아보자는 식으로 Gatsby 사이트의 문서를 읽고 있던 나는 단시간에 모든 tutorial을 끝내 버렸다. 그리고 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;만 설치해서 점진적으로 개선하기로 마음 먹었다. 예전 같으면 마음에 드는 테마와 플러그인을 찾느라 더 많은 시간을 허비했을 것이다. 이렇게 점진적 개선의 마음가짐을 자연스럽게 얻을 수 있는 것은 Gatsby의 가장 큰 장점이라 생각한다.&lt;/p&gt;
+&lt;p&gt;그 것은 분명히 Gatsby의 기본 철학과도 맞닿아 있다. 웹사이트는 재미있게 만들 수 있어야 하며, 점진적인 공개(Progressive disclose) 방식으로 디자인하여 처음부터 모든 것을 다 알지 못해도 기본적인 기능만으로 웹사이트를 구성할 수 있다. Gatsby에 익숙해지고, 더 많은 것을 알게 될 미래에는 더욱 세세한 부분까지도 수정할 수 있게 되는 것이다. 마치 많은 설정들이 구석구석 숨어 들어있는 아이폰의 디자인처럼…&lt;/p&gt;
+&lt;h4&gt;Yak Shaving&lt;/h4&gt;
+&lt;p&gt;더군다나 항상 새로운 기술을 갈망하는 개발자의 한명으로써 현업에서 다루지 못하고 있는 React를 가지고 놀 수 있다는 점, 그리고 참으로 궁금한 녀석이었던 GraphQL 쿼리를 만져 볼 수 있다는 점만으로도 Gatsby로 당장 바꾸지 않을 이유가 없었다. 함수의 불변성을 효과적으로 설명하고자 했던 목적은 어느새 저멀리 던져버렸다는 점에서 &lt;a href=&quot;https://www.lesstif.com/software-engineering/yak-shaving-29590364.html&quot;&gt;야크의 털을 깎는 짓&lt;/a&gt;을 하고 말았다. 하지만 후회는 없다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 609px; &quot;
@@ -50,8 +186,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;time for change&quot;
-        title=&quot;time for change&quot;
+        alt=&quot;yak shaving for change&quot;
+        title=&quot;yak shaving for change&quot;
         src=&quot;/static/451de3851d1bff0f55c793d483c0e6ce/d0d8c/yak-shaving-small.png&quot;
         srcset=&quot;/static/451de3851d1bff0f55c793d483c0e6ce/c26ae/yak-shaving-small.png 158w,
 /static/451de3851d1bff0f55c793d483c0e6ce/6bdcf/yak-shaving-small.png 315w,
@@ -62,15 +198,41 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;Yak Shaving&lt;/h2&gt;
-&lt;p&gt;리팩토링 책을 읽으면서 함수의 불변성이 리팩토링의 용이함과도 무관하지 않다는 것을 알게 되었다. 과거에도 함수의 불변성에 대해서 검색해본 적이 있지만 무슨 뜻인지 설명하는 글은 많아도 왜 그 것이 중요한지에대서 시원하게 설명해주는 글은 발견하지 못했다. 그래서 함수의 불변성에 대해서 쉽게 설명할 수 없을까 다시 고민하며 검색을 반복하던 중 한 블로그에서 —원래의 검색 목적과는 무관하게— Gatsby를 알게 됐다.&lt;/p&gt;
-&lt;p&gt;처음에는 무엇인지만 알아보자는 식으로 Gatsby 사이트의 문서를 읽고 있던 나는 단시간에 모든 tutorial을 끝내 버렸다. 그리고 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;만 설치해서 점진적으로 개선하기로 마음 먹었다. 예전 같으면 마음에 드는 테마와 플러그인을 찾느라 더 많은 시간을 허비했을 것이다. 점진적 개선의 마음가짐을 자연스럽게 가질 수 있다는 점이 Gatsby의 가장 큰 차별점이라 생각한다.&lt;/p&gt;
-&lt;p&gt;그 것은 분명히 Gatsby의 기본 철학과도 관련이 있다. 웹사이트는 재미있게 만들 수 있어야 하며, 점진적인 공개(Progressive disclose) 방식으로 디자인하여 처음부터 다 알지 못해도 웹사이트를 만들 수 있다. Gatsby에 익숙해지고, 더 많은 것을 알게 될 미래에는 더욱 세세한 부분까지도 수정할 수 있게 된다는 것이다. 마치 많은 설정들이 구석구석 숨어 들어있는 아이폰의 디자인처럼…&lt;/p&gt;
-&lt;p&gt;더구나 항상 새로운 기술 것을 갈망하는 개발자의 한명으로써 현업에서 다루지 못하고 있는 React를 가지고 놀 수 있다는 점, 그리고 참으로 궁금한 녀석이었던 GraphQL을 이용해 볼 수 있다는 점만으로도 Gatsby로 당장 바꾸지 않을 이유가 없었다. 함수의 불변성을 효과적으로 설명하고자 했던 목적은 어느새 저멀리 던져버렸다는 점에서 야크의 털을 깎는 짓을 하고 말았지만 후회는 없다. &lt;a href=&quot;https://www.lesstif.com/software-engineering/yak-shaving-29590364.html&quot;&gt;야크 털 깎기&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;앞으로 해야할 것&lt;/h2&gt;
+&lt;h4&gt;나의 첫 Gatsby blog가 완성됐다&lt;/h4&gt;
+&lt;p&gt;이렇게 나의 첫 Gatsby blog가 완성되었다. 아직 해야할 일이 많지만 차근차근 해 나가면서 다른 사람에게도 도움이 될만한 포스팅을 작성해 나가는 것이 나의 목표이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 619px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/424a314dd092ef335b3eb1509a780278/e628c/my-first-gatsby.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 86.70886075949367%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABXklEQVQ4y7WSOW/CMBSA+Zn9B/wKBkBqODp0BjGwICRUiYkIlXQg7YSEurRqmRCFluAkdpzLcRzTxzGUXoJUfbL8ZPt973Rm/QfJ7JSmafV6vd/vq6qq6/poNKpWq3DZbDZbrZa+lUKh0Gg0wGY8Hh/Ag4F2rii5XK5WqymK0uup7Xa7UqkUi0UAOp1Ot9stl8ulUimbzebzeUCklJmvyXAewcNPqQohGGMHkQkTD5YXBCG2se8HlLq2bWNCLGujYWcsSpIESNg/13x1Ozy7uDQcQokDECYOQiZwyLQ2R0yiiO8s5VYO4Nl8enOtyrVM0+291w+Ofyn7ezjlnGeI9u5nd89vTwt7+Lh4sbxjgu9hxw0mc3NqEOIzEkSMixMih2Hou27ge5zzk9OmlC4NtEIwUSxlum7LVKMSsdgJ5zFkzuM4igUXyVEwfEz4hrCM1co0zSWyJq94ib1/nPM7+LnHKDqH4AIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;my first gatsby&quot;
+        title=&quot;my first gatsby&quot;
+        src=&quot;/static/424a314dd092ef335b3eb1509a780278/e628c/my-first-gatsby.png&quot;
+        srcset=&quot;/static/424a314dd092ef335b3eb1509a780278/c26ae/my-first-gatsby.png 158w,
+/static/424a314dd092ef335b3eb1509a780278/6bdcf/my-first-gatsby.png 315w,
+/static/424a314dd092ef335b3eb1509a780278/e628c/my-first-gatsby.png 619w&quot;
+        sizes=&quot;(max-width: 619px) 100vw, 619px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;앞으로 해야할 것&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;del&gt;~프로필 사진 넣기&lt;/del&gt;~&lt;/li&gt;
-&lt;li&gt;한글 폰트 바꾸기&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;~한글 폰트 바꾸기&lt;/del&gt;~&lt;/li&gt;
 &lt;li&gt;검색창 넣기&lt;/li&gt;
 &lt;li&gt;과거 글 가져오기 (오래 걸림)&lt;/li&gt;
 &lt;li&gt;about 페이지 추가&lt;/li&gt;
