@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Nov 2020 20:46:28 GMT</lastBuildDate><item><title><![CDATA[새로운 시작]]></title><description><![CDATA[Hexo와 Wordpress를 버리다 2017년 잠시 동안 영어 공부에 전념할 당시 markdown 기반의 static page generator 중 하나인 hexo…]]></description><link>https://soopdop.github.io/new-beginnings/</link><guid isPermaLink="false">https://soopdop.github.io/new-beginnings/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Nov 2020 05:44:55 GMT</lastBuildDate><item><title><![CDATA[새로운 시작]]></title><description><![CDATA[Hexo와 Wordpress를 버리다 2017년 잠시 동안 영어 공부에 전념할 당시 markdown 기반의 static page generator 중 하나인 hexo…]]></description><link>https://soopdop.github.io/new-beginnings/</link><guid isPermaLink="false">https://soopdop.github.io/new-beginnings/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -31,7 +31,7 @@
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;Hexo와 Wordpress를 버리다&lt;/h2&gt;
 &lt;p&gt;2017년 잠시 동안 영어 공부에 전념할 당시 markdown 기반의 static page generator 중 하나인 hexo을 이용했었다. 하지만 정보 전달을 목적으로 쓰는 블로그용이 아니라 매일 학습한 것을 기록하는 용도로서는 markdown으로 문서를 작성하는 것이 매우 번거로웠다.&lt;/p&gt;
-&lt;p&gt;그래서 한동안 NAS에 wordpress를 설치해서 사용하고 있었다. wordpress는 여전히 인기 있는 툴이고 웹 개발 지식이 전혀 없는 사람들에게는 다양한 설정으로 커스터마이즈된 웹 페이지를 만들어 주는 훌륭한 도구임에는 이견이 없다. 하지만 마음에 쏙 드는 테마와 플러그인을 찾는데 너무 많은 시간을 허비해야 했다. &lt;/p&gt;
+&lt;p&gt;그래서 한동안 NAS에 wordpress를 설치해서 사용하고 있었다. wordpress는 여전히 인기 있는 툴이고 웹 개발 지식이 전혀 없는 사람들에게는 다양한 설정으로 커스터마이즈된 웹 페이지를 만들어 주는 훌륭한 도구임에는 이견이 없다. 하지만 마음에 쏙 드는 테마와 플러그인을 찾는데 너무 많은 시간을 허비해야 했다.&lt;/p&gt;
 &lt;p&gt;어느정도 마음에 드는 테마와 플러그인을 발견했다 하더라도 버그가 있거나 현재 버전의 wordpress와의 버전 호환성 문제가 발목을 잡는 경우가 대부분이었다. 그렇다고 해서 마음에 들지 않는 부분을 일부 수정하는 행위는 최악이라는 사실을 zero board와 xpressengine을 통해서 경험 했기 때문에 스타일을 조금 수정하는 것 조차 꺼려질 수 밖에 없었다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -63,13 +63,14 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;Yak Shaving&lt;/h2&gt;
-&lt;p&gt;리팩토링 책을 읽으면서 함수의 불변성이 리팩토링의 용이함과도 무관하지 않다는 것을 알게 되었다. 과거에도 함수의 불변성에 대해서 검색해본 적이 있지만 무슨 뜻인지 설명하는 글은 많아도 왜 그 것이 중요한지에대서 시원하게 설명해주는 글은 발견하지 못했다. 그래서 함수의 불변성에 대해서 쉽게 설명할 수 없을까 다시 고민하며 검색을 반복하던 중 한 블로그에서 —원래의 검색 목적과는 무관하게— Gatsby를 알게 됐다. &lt;/p&gt;
-&lt;p&gt;처음에는 무엇인지만 알아보자는 식으로 Gatsby 사이트의 문서를 읽고 있던 나는 단시간에 모든 tutorial을 끝내 버렸다. 그리고 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;만 설치해서 점진적으로 개선하기로 마음 먹었다. 예전 같으면 마음에 드는 테마와 플러그인을 찾느라 더 많은 시간을 허비했을 것이다. 점진적 개선의 마음가짐을 자연스럽게 가질 수 있다는 점이 Gatsby의 가장 큰 차별점이라 생각한다. &lt;/p&gt;
+&lt;p&gt;리팩토링 책을 읽으면서 함수의 불변성이 리팩토링의 용이함과도 무관하지 않다는 것을 알게 되었다. 과거에도 함수의 불변성에 대해서 검색해본 적이 있지만 무슨 뜻인지 설명하는 글은 많아도 왜 그 것이 중요한지에대서 시원하게 설명해주는 글은 발견하지 못했다. 그래서 함수의 불변성에 대해서 쉽게 설명할 수 없을까 다시 고민하며 검색을 반복하던 중 한 블로그에서 —원래의 검색 목적과는 무관하게— Gatsby를 알게 됐다.&lt;/p&gt;
+&lt;p&gt;처음에는 무엇인지만 알아보자는 식으로 Gatsby 사이트의 문서를 읽고 있던 나는 단시간에 모든 tutorial을 끝내 버렸다. 그리고 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;만 설치해서 점진적으로 개선하기로 마음 먹었다. 예전 같으면 마음에 드는 테마와 플러그인을 찾느라 더 많은 시간을 허비했을 것이다. 점진적 개선의 마음가짐을 자연스럽게 가질 수 있다는 점이 Gatsby의 가장 큰 차별점이라 생각한다.&lt;/p&gt;
 &lt;p&gt;그 것은 분명히 Gatsby의 기본 철학과도 관련이 있다. 웹사이트는 재미있게 만들 수 있어야 하며, 점진적인 공개(Progressive disclose) 방식으로 디자인하여 처음부터 다 알지 못해도 웹사이트를 만들 수 있다. Gatsby에 익숙해지고, 더 많은 것을 알게 될 미래에는 더욱 세세한 부분까지도 수정할 수 있게 된다는 것이다. 마치 많은 설정들이 구석구석 숨어 들어있는 아이폰의 디자인처럼…&lt;/p&gt;
 &lt;p&gt;더구나 항상 새로운 기술 것을 갈망하는 개발자의 한명으로써 현업에서 다루지 못하고 있는 React를 가지고 놀 수 있다는 점, 그리고 참으로 궁금한 녀석이었던 GraphQL을 이용해 볼 수 있다는 점만으로도 Gatsby로 당장 바꾸지 않을 이유가 없었다. 함수의 불변성을 효과적으로 설명하고자 했던 목적은 어느새 저멀리 던져버렸다는 점에서 야크의 털을 깎는 짓을 하고 말았지만 후회는 없다. &lt;a href=&quot;https://www.lesstif.com/software-engineering/yak-shaving-29590364.html&quot;&gt;야크 털 깎기&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;앞으로 해야할 것&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;프로필 사진 넣기&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;~프로필 사진 넣기&lt;/del&gt;~&lt;/li&gt;
+&lt;li&gt;한글 폰트 바꾸기&lt;/li&gt;
 &lt;li&gt;검색창 넣기&lt;/li&gt;
 &lt;li&gt;과거 글 가져오기 (오래 걸림)&lt;/li&gt;
 &lt;li&gt;about 페이지 추가&lt;/li&gt;
