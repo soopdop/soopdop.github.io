@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Nov 2020 17:01:12 GMT</lastBuildDate><item><title><![CDATA[Gatsby에 구글 한글 폰트를 입히자]]></title><description><![CDATA[이 포스팅에서는 에서 기본적으로 설정되어 있는 폰트를 구글 폰트로 바꾸는 과정을 설명한다. 는 국내에서 만들어진 것이 아니기 때문에 당연하게도 한글 폰트가 설정되어 있지 않다. 윈도우 사용자라면 Serif 계열은 바탕체, Sans…]]></description><link>https://soopdop.github.io/2020/11/24/change-font-in-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/24/change-font-in-gatsby/</guid><pubDate>Mon, 23 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Nov 2020 17:21:58 GMT</lastBuildDate><item><title><![CDATA[Gatsby에 구글 한글 폰트를 입히자]]></title><description><![CDATA[이 포스팅에서는 에서 기본적으로 설정되어 있는 폰트를 구글 폰트로 바꾸는 과정을 설명한다. 는 국내에서 만들어진 것이 아니기 때문에 당연하게도 한글 폰트가 설정되어 있지 않다. 윈도우 사용자라면 Serif 계열은 바탕체, Sans…]]></description><link>https://soopdop.github.io/2020/11/24/change-font-in-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/24/change-font-in-gatsby/</guid><pubDate>Mon, 23 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 619px; &quot;
     &gt;
@@ -124,10 +124,42 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h4&gt;글꼴 선택 시 Typography 예제 사이트를 활용하는 방법&lt;/h4&gt;
-&lt;p&gt;한글 글꼴의 수는 제한적이기 때문에 그 중 하나를 선택하는 것은 그리 어렵지가 않다. 하지만 한글 폰트에 포함된 영문 폰트가 아닌 별도의 영문 폰트를 사용하려 할 때, 수 많은 영문 폰트 중 하나를 선택하는 것은 꽤 어려운 일이다. &lt;/p&gt;
+&lt;h4&gt;폰트 선택 시 Typography 예제 사이트를 활용하는 방법&lt;/h4&gt;
+&lt;p&gt;한글 폰트의 수는 제한적이기 때문에 그 중 하나를 선택하는 것은 그리 어렵지가 않다. 하지만 한글 폰트에 포함된 영문 폰트가 아닌 별도의 영문 폰트를 사용하려 할 때, 수 많은 영문 폰트 중 하나를 선택하는 것은 꽤 어려운 일이다. &lt;/p&gt;
 &lt;p&gt;이 때, 위에서 소개한 &lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;Typography 예제 사이트&lt;/a&gt;가 유용하게 사용될 수 있다. 보통의 폰트 관련 사이트에서는 폰트를 보여주기 위해서 한 개 정도의 문장만 보여준다. 한 문장만을 보고 본문에 사용될 영문 폰트는 어렵다. 문장 하나가 괜찮아 보이는 것과 다수의 문단으로 이루어진 블로그 포스팅에서 각각의 문장들이 잘 어울어지는지의 여부는 별개의 문제이기 때문이다.&lt;/p&gt;
-&lt;p&gt;이 사이트에서 제공하는 예제의 본문 구조는 블로그 포스팅 형태이기 때문에 미리 정의된 테마를 교체 해 보면서 마음에 드는 폰트의 조합을 얻어 낼 수도 있고, 직접 폰트를 지정하여 실시간으로 바뀐 모습을 확인할 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[새로운 시작]]></title><description><![CDATA[최근 우연하게 Gatsby를 “발견”하고 그 것을 이용해서 블로그를 만들려고 한다. 그 과정을 기록으로 남기고자 한다.  Hexo와 Wordpress를 버린 이유 2017년 잠시 동안 밤낮으로 영어 공부에 전념할 당시 markdown…]]></description><link>https://soopdop.github.io/2020/11/23/new-beginnings/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/23/new-beginnings/</guid><pubDate>Sun, 22 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;이 사이트에서 제공하는 예제의 본문 구조는 블로그 포스팅 형태이기 때문에 미리 정의된 테마를 교체 해 보면서 마음에 드는 폰트의 조합을 얻어 낼 수도 있고, 직접 폰트를 지정하여 실시간으로 바뀐 모습을 확인할 수 있다.&lt;/p&gt;
+&lt;h4&gt;폰트 하나만 바꾸었을 뿐인데?&lt;/h4&gt;
+&lt;p&gt;결과는 대만족. 나눔 고딕이나 바른 고딕과 같은 폰트를 사용해 본 경험에 의하면 그 것들은 기본적으로 예쁜 폰트이기는 하나 작은 크기에서는 엉성하게 렌더링 되는 모습을 보여 실망한 적이 있었다. 그리고 맥에서 봤을 때는 반할 정도로 예뻤어도, 윈도우에서 만든 것을 재확인 했을 때 ‘이건 틀림 없이 무슨 버그가 있는게 틀림 없어’ 라는 생각이 들 정도로 심한 차이를 보인 적도 있었다. 조금 전 바꾼 폰트는 윈도우에서만 확인한 결과만으로도 렌더링된 폰트의 두께가 매우 균일하게 느껴지고, 그 것에 자연스러움을 더해주는 anti-aliasing, 가독성 측면에서도 뛰어나 상당히 만족하고 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/54068dab6e7d326b42bc21dd79418ceb/3f3b9/changed.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 85.44303797468356%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB7UlEQVQ4y61TbYvaQBDO//8V0m+CoIggfhC0FrTglfbs9eirrTEm2ST7ks3LmahPZzdeaT/c1V5vYJjZ2Z2HmXl2nPl8juFwiOl0CuPPZjOMRiP0+30sFgtrja5WKxg5nU54TBwD0uv10O12baIB7HQ6aLfbmEwmGAwGaLVaGI/HNuF4PD4OiAvEVFXX9WUVDq7e4cXLOVKdIU01OOcIWYQoihHFyS+gS8As4PuPN3j9ZomqPuBwOJCtUVW1tTXFTItHAroHO/3mP7nlf6pwwxSuvzO8XTPcbhN8cGMsvwR0DrH4tMPya4Ar0s+++KPCh9RhIsXaT7AOOCKhIbI7RGlBWlplqkCsS+iyuqgLpywL5FpDCQEpJfIsg05TZDq1Ns90c6Y45wJKpWfyBOKYQ2cNmQmd87yAE4YRNq4HP2AISI2/2wVwtzt4ZIOQwTUxP6T70J5Njuf59t78hI27xdbbWWBnv9+j2ld4LnG+BRKvbj1c/4hws4kh87tmI/4y/AdJUTpHmCgkkmZFMzj9b4VmyDzhiGkzYpqHUXb2pVJ2Y8zc7uPGNwRIqcDMRpkcyhdEqNmqBpBLCCHtRcMeJbMYnGJJcl7FM6CJN/cRfCJKnN8oIsS2jGcWJy8K+7dMeynZgKf0uUuzE08i5SfCaxo4vByjcAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;changed&quot;
+        title=&quot;changed&quot;
+        src=&quot;/static/54068dab6e7d326b42bc21dd79418ceb/f058b/changed.png&quot;
+        srcset=&quot;/static/54068dab6e7d326b42bc21dd79418ceb/c26ae/changed.png 158w,
+/static/54068dab6e7d326b42bc21dd79418ceb/6bdcf/changed.png 315w,
+/static/54068dab6e7d326b42bc21dd79418ceb/f058b/changed.png 630w,
+/static/54068dab6e7d326b42bc21dd79418ceb/3f3b9/changed.png 870w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[새로운 시작]]></title><description><![CDATA[최근 우연하게 Gatsby를 “발견”하고 그 것을 이용해서 블로그를 만들려고 한다. 그 과정을 기록으로 남기고자 한다.  Hexo와 Wordpress를 버린 이유 2017년 잠시 동안 밤낮으로 영어 공부에 전념할 당시 markdown…]]></description><link>https://soopdop.github.io/2020/11/23/new-beginnings/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/23/new-beginnings/</guid><pubDate>Sun, 22 Nov 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
