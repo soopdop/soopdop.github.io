@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Dec 2020 17:54:07 GMT</lastBuildDate><item><title><![CDATA[Gatsby Blog에 목차 추가하기]]></title><description><![CDATA[이 포스트에서는 블로그 포스트의 헤더들 (, , )을 모아 목차 리스트를 자동 생성해 주고 그 것을 각 포스트의 우측 상단에 넣는 작업을 진행하는 과정에 대해서 설명한다. 쿼리를 통해서 tableOfContent를 확인하자 각 markdown…]]></description><link>https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이 포스트에서는 블로그 포스트의 헤더들 (&lt;code class=&quot;language-text&quot;&gt;H1&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;H2&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;H3&lt;/code&gt;)을 모아 목차 리스트를 자동 생성해 주고 그 것을 각 포스트의 우측 상단에 넣는 작업을 진행하는 과정에 대해서 설명한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[나의 기록 보관소.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Dec 2020 18:42:34 GMT</lastBuildDate><item><title><![CDATA[Gatsby Blog에 목차 추가하기]]></title><description><![CDATA[이 포스트에서는 Table of Contents 컴퍼넌트를 만들어서 각 markdown 포스트의 우상단에 위치하도록 작업하는 과정에 대해서 설명한다. 쿼리를 통해서 tableOfContent를 확인하자 각 markdown…]]></description><link>https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이 포스트에서는 Table of Contents 컴퍼넌트를 만들어서 각 markdown 포스트의 우상단에 위치하도록 작업하는 과정에 대해서 설명한다.&lt;/p&gt;
 &lt;h5 id=&quot;쿼리를-통해서-tableofcontent를-확인하자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BF%BC%EB%A6%AC%EB%A5%BC-%ED%86%B5%ED%95%B4%EC%84%9C-tableofcontent%EB%A5%BC-%ED%99%95%EC%9D%B8%ED%95%98%EC%9E%90&quot; aria-label=&quot;쿼리를 통해서 tableofcontent를 확인하자 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;쿼리를 통해서 tableOfContent를 확인하자&lt;/h5&gt;
-&lt;p&gt;각 markdown 문서의 목차는 이미 &lt;code class=&quot;language-text&quot;&gt;gatsby-transformer-remark&lt;/code&gt;플러그인에 의해서 만들어져 있다. 이 플러그인은 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt; 스타터에 들어 있는 핵심적인 플러그인으로 markdown문서를 html 문서로 변환해주는 역할을 한다.&lt;/p&gt;
+&lt;p&gt;각 markdown 문서의 목차는 이미 &lt;code class=&quot;language-text&quot;&gt;gatsby-transformer-remark&lt;/code&gt;플러그인에 의해서 만들어져 있다. 이 플러그인은 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;에 기본적으로 들어 있는 플러그인으로 markdown문서를 html 문서로 변환해주는 역할을 한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre class=&quot;language-graphql&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   allMarkdownRemark &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     nodes &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -12,7 +12,7 @@
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;GraphQL 콘솔에서 위와 같이 쿼리해보면 노드의 tableOfContents 필드에 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;li&amp;gt;&lt;/code&gt; 태그로 구성된 html이 들어 있는 것을 알 수 있다. 스타일은 입혀져 있지 않으며, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&amp;#39;/slug/#header-title&amp;#39;&amp;gt;&lt;/code&gt; 형태의 링크까지 제공된다.&lt;/p&gt;
+&lt;p&gt;GraphQL 콘솔에서 위와 같이 쿼리해보면 노드의 tableOfContents 필드에 html이 들어 있는 것을 알 수 있다. 스타일은 적용되어 있지 않으며, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&amp;#39;/slug/#header-title&amp;#39;&amp;gt;&lt;/code&gt; 형태의 링크까지 제공된다.&lt;/p&gt;
 &lt;p&gt;어떤 블로그에서는 html이 결과물로 나오기 때문에 수정하려면 parsing이 필요하다고 했지만, 리스트를 만들 때 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;li&amp;gt;&lt;/code&gt;는 거의 표준에 가깝기 때문에 이 것을 수정할 일은 없을 것이라 예상된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;26d3eb03-c789-568f-b537-6803e3c98ec0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -124,8 +124,8 @@
   &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sticky&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;아직 아름다움을 위한 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;는 전혀 추가하지 않았다. 조만간 ui framework 적용을 계획하고 있기 때문에 건들여봐야 시간 낭비이기 때문이다. 따라서 레이아웃을 위한 최소한의 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;를 위와 같이 추가 해싸.&lt;/p&gt;
-&lt;p&gt;한가지 눈 여겨봐야할 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;속성은 &lt;code class=&quot;language-text&quot;&gt;.table-of-content&lt;/code&gt;에 쓰인 &lt;code class=&quot;language-text&quot;&gt;position: sticky&lt;/code&gt;이다. 페이지 전체를 스크롤 할때 같이 올라가다가 최상단에 이르면 더이상 위로 올라가지 않게 만들 때 쓰인다. 본문이 스크롤된다고 해서 목차 메뉴가 사라지면 매우 불편할 것이기 때문에 반드시 적용해줘야하는 속성이다.&lt;/p&gt;
+&lt;p&gt;아직 외관을 위한 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;는 전혀 추가하지 않았다. 조만간 ui framework 적용을 계획하고 있기 때문에 건들여봐야 시간 낭비이기 때문이다. 따라서 레이아웃을 위한 최소한의 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;를 위와 같이 추가 했다.&lt;/p&gt;
+&lt;p&gt;한가지 눈 여겨봐야할 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;속성은 &lt;code class=&quot;language-text&quot;&gt;.table-of-content&lt;/code&gt;에 쓰인 &lt;code class=&quot;language-text&quot;&gt;position: sticky&lt;/code&gt;이다. 페이지 전체를 스크롤 할때 같이 올라가다가 최상단에 이르면 더이상 위로 올라가지 않게 만들 때 쓰인다. 본문이 스크롤된다고 해서 목차 메뉴가 사라지면 매우 불편할 것이기 때문에 반드시 적용해야하는 속성이다.&lt;/p&gt;
 &lt;p&gt;이제 그림과 같이 목차 메뉴가 본문 우측에 배치되었다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -151,8 +151,8 @@
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h5 id=&quot;해시를-이용한-링크가-동작하도록-만들자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EC%8B%9C%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%A7%81%ED%81%AC%EA%B0%80-%EB%8F%99%EC%9E%91%ED%95%98%EB%8F%84%EB%A1%9D-%EB%A7%8C%EB%93%A4%EC%9E%90&quot; aria-label=&quot;해시를 이용한 링크가 동작하도록 만들자 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해시를 이용한 링크가 동작하도록 만들자&lt;/h5&gt;
-&lt;p&gt;만들어진 목차의 아이템 중 하나를 클릭해 보면 브라우저의 주소창에 해시 부분이 변경되지만 아무일도 일어나지 않는 것을 알 수 있다. 해시가 바뀌는 경우 해당 anchor로 이동해야 하고.. &amp;#x3C;수정해야함&gt;&lt;/p&gt;
-&lt;p&gt;이 작업을 해주는 플러그인이 &lt;code class=&quot;language-text&quot;&gt;gatsby-remark-autolink-headers&lt;/code&gt;이다. &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;yarn&lt;/code&gt;으로 설치하고 다음과 같이 &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;에 추가한다. 한가지 재미 있는 사실은 이 플러그인이 “플러그인의 플러그인”이라는 사실이다. 이게 가능하게 만들 것이라고는 상상하지도 못한 것인데 역시 Gatsby는 훌륭하다.&lt;/p&gt;
+&lt;p&gt;만들어진 목차의 아이템 중 하나를 클릭해 보면 브라우저의 주소창에 해시 부분이 변경되지만 아무일도 일어나지 않는 것을 알 수 있다. 해쉬 값과 같은 id를 가진 element가 있어야하지만 현재의 헤더 태그들 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;h2&amp;gt;&lt;/code&gt;… 에 id가 할당되어 있지 않기 때문이다.&lt;/p&gt;
+&lt;p&gt;그 작업을 해주는 플러그인이 &lt;code class=&quot;language-text&quot;&gt;gatsby-remark-autolink-headers&lt;/code&gt;이다. &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;yarn&lt;/code&gt;으로 설치하고 다음과 같이 &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;에 추가한다. 한가지 재미 있는 사실은 이 플러그인이 “플러그인의 플러그인”이라는 사실이다. 이게 가능하게 만들 것이라고는 상상하지도 못한 것인데 역시 Gatsby는 훌륭하다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   resolve&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-transformer-remark&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   options&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -3521,11 +3521,6 @@ asyncFunc
 &lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;/2020/11/25/change-font-in-gatsby&quot;&gt;🔗&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;과거의 포스트들 정리하여 가져오기&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;🚧&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;카테고리 기능 추가&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;✔️&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;/2020/11/26/add-categories-to-gatsby/&quot;&gt;🔗&lt;/a&gt;&lt;/td&gt;
@@ -3539,6 +3534,11 @@ asyncFunc
 &lt;td&gt;목차 기능 추가하기&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;✔️&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;/2020/12/03/add-table-of-content-gatsby/&quot;&gt;🔗&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prism.js 언어 타입 표시, line highlight 기능 활성화&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;☹️&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;레이아웃 적용 및 스타일링&lt;/td&gt;
@@ -3563,6 +3563,11 @@ asyncFunc
 &lt;tr&gt;
 &lt;td&gt;Cover Thumbnail 기능 추가&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;☹️&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;과거의 포스트들 정리하여 가져오기&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;🚧&lt;/td&gt;
 &lt;td align=&quot;center&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
