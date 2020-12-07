@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://soopdop.github.io/2020/11/22/new-beginnings/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/23/progressively-improve-gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soopdop.github.io/2020/11/25/bring-old-post-to-gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/25/change-font-in-gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://soopdop.github.io/2020/11/25/bring-old-post-to-gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/27/add-categories-to-gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-5/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-6/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-7/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://soopdop.github.io/2020/11/26/deep-javascript-chapter-8/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
