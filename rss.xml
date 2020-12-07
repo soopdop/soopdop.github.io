@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[Create What You Want Use.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Dec 2020 10:38:06 GMT</lastBuildDate><item><title><![CDATA[Gatsby Blog에 목차 추가하기]]></title><description><![CDATA[이 포스트에서는 Table of Contents 컴퍼넌트를 만들어서 각 markdown 포스트의 우상단에 위치하도록 작업하는 과정에 대해서 설명한다. GraphQL에서 tableOfContent 필드 확인 각 markdown…]]></description><link>https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이 포스트에서는 Table of Contents 컴퍼넌트를 만들어서 각 markdown 포스트의 우상단에 위치하도록 작업하는 과정에 대해서 설명한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Harry Park's Blog]]></title><description><![CDATA[Create What You Want Use.]]></description><link>https://soopdop.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Dec 2020 15:17:19 GMT</lastBuildDate><item><title><![CDATA[Gatsby Blog에 목차 추가하기]]></title><description><![CDATA[이 포스트에서는 Table of Contents 컴퍼넌트를 만들어서 각 markdown 포스트의 우상단에 위치하도록 작업하는 과정에 대해서 설명한다. GraphQL에서 tableOfContent 필드 확인 각 markdown…]]></description><link>https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/12/03/add-table-of-content-gatsby/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이 포스트에서는 Table of Contents 컴퍼넌트를 만들어서 각 markdown 포스트의 우상단에 위치하도록 작업하는 과정에 대해서 설명한다.&lt;/p&gt;
 &lt;h2 id=&quot;graphql에서-tableofcontent-필드-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql%EC%97%90%EC%84%9C-tableofcontent-%ED%95%84%EB%93%9C-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;graphql에서 tableofcontent 필드 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GraphQL에서 tableOfContent 필드 확인&lt;/h2&gt;
 &lt;p&gt;각 markdown 문서의 목차는 이미 &lt;code class=&quot;language-text&quot;&gt;gatsby-transformer-remark&lt;/code&gt;플러그인에 의해서 만들어져 있다. 이 플러그인은 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;에 기본적으로 들어 있는 플러그인으로 markdown문서를 html 문서로 변환해주는 역할을 한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -3204,7 +3204,7 @@ test3:
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; PropTypes &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;prop-types&quot;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; kebabCase &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;lodash/kebabCase&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Layout &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;../components/layout&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Layout &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;../components/Layout&quot;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;SEO&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;../components/seo&quot;&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;// data, location은 pageProps 중 일부이며, 다양한 프로퍼티를 넘겨주지만,&lt;/span&gt;
@@ -3430,7 +3430,7 @@ Categories&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;propType
 &lt;p&gt;TypeScript 환경이 셋팅되었으니 이제 &lt;code class=&quot;language-text&quot;&gt;/categories/{카테고리이름}&lt;/code&gt;을 위한 템플릿 페이지도 만든다. 다시 한번 고맙게도 &lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-graphql-codegen&lt;/code&gt;가 쿼리 결과 뿐만 아니라 &lt;code class=&quot;language-text&quot;&gt;context&lt;/code&gt; 로 전달한 값들 까지도 type을 생성해 준다는 점이다. 또 한가지 알고 넘어가야 할 점은 PageQuery로 전달되는 &lt;code class=&quot;language-text&quot;&gt;arguement&lt;/code&gt; 인 &lt;code class=&quot;language-text&quot;&gt;$category&lt;/code&gt; 가 &lt;code class=&quot;language-text&quot;&gt;page context&lt;/code&gt;로부터 전달된다는 점이다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { graphql, Link, PageProps } from &amp;quot;gatsby&amp;quot;
 import React from &amp;quot;react&amp;quot;
-import Layout from &amp;quot;../components/layout&amp;quot;
+import Layout from &amp;quot;../components/Layout&amp;quot;
 import SEO from &amp;quot;../components/seo&amp;quot;
 import { CategoryQuery, SitePageContext } from &amp;quot;../../graphql-types&amp;quot;
 
@@ -3497,7 +3497,178 @@ export const pageQuery = graphql`
   }
 `
 
-끝.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Gatsby Blog에 구글 폰트를 입히기]]></title><description><![CDATA[첫 블로그를 만들기 위해서 사용한 gatsby starter인 gatsby-starter-blog는 국내에서 만들어진 것이 아니기 때문에 당연히 한글 폰트가 설정되어 있지 않다. 윈도우 사용자라면 Serif 계열은 “바탕체”, Sans…]]></description><link>https://soopdop.github.io/2020/11/25/change-font-in-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/25/change-font-in-gatsby/</guid><pubDate>Wed, 25 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+끝.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Gatsby Blog의 Slug를 구성하기]]></title><description><![CDATA[과거에 작성한 와 에 저장된 포스트를 가져오는 작업을 먼저 해보기로 결정했다.  블로그의 레이아웃을 잡아가는 과정에서 몇 개 이상의 컨텐트가 필요하다고 생각했기 때문이다. 문서 자체는 markdown…]]></description><link>https://soopdop.github.io/2020/11/25/bring-old-post-to-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/25/bring-old-post-to-gatsby/</guid><pubDate>Wed, 25 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;과거에 작성한 &lt;code class=&quot;language-text&quot;&gt;Hexo&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;Wordpress&lt;/code&gt;에 저장된 포스트를 가져오는 작업을 먼저 해보기로 결정했다. &lt;code class=&quot;language-text&quot;&gt;Gatsby&lt;/code&gt; 블로그의 레이아웃을 잡아가는 과정에서 몇 개 이상의 컨텐트가 필요하다고 생각했기 때문이다. 문서 자체는 markdown 파일이기에 복사 후 조금 수정해 주면 문제가 없다. 하지만 slug 구성과 폴더의 구조 결정이 우선적으로 이루어져야했다.&lt;/p&gt;
+&lt;h2 id=&quot;slug란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#slug%EB%9E%80&quot; aria-label=&quot;slug란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Slug란?&lt;/h2&gt;
+&lt;p&gt;이미 &lt;code class=&quot;language-text&quot;&gt;slug&lt;/code&gt;라는 단어에 이미 익숙한 사람들이 많을지 모르겠지만, 나에게는 새로운 용어 중 하나였다. wikipedia에서 문서를 찾았지만 역시 민달팽이에 대한 것이었고, url과 함께 검색한 결과로 &lt;a href=&quot;https://en.wikipedia.org/wiki/Clean_URL&quot;&gt;Clean URL&lt;/a&gt; 문서를 찾을 수 있었다. 이 문서를 통해서 slug의 뜻과 유래를 알 수 있었다.&lt;/p&gt;
+&lt;p&gt;slug는 URL의 한 부분으로 &lt;strong&gt;사람이 읽기 쉬운 키워드&lt;/strong&gt;로 페이지를 구분하게 해주는 키워드이다. 특정 리소스 혹은 파일의 이름, 페이지의 제목 등이 될 수 있다. 사람들은 이 slug를 통해서 해당 컨텐트의 내용을 제목을 짐작할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9ab2b27556f655307cd864875ab7eb78/3dde1/slug.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVQY032PywrCMBBF8///IVIXbi1FFxYEbRKs6EbFTXXRFm0mthGrmcS0C5/g4RAGksvcEKUueZ7f6iu+MGWpAJSUl9ZKyrI9z1+S5XLleb0kSbIsA4Cqco/yRTydTUeMBTQaUBrSaMxoyDnjfM6ZM27kMRFCpGnqMi5ZFCelahATEH0QPkAgjgO57cp1R+66+lagsYj62ZAYY5qinyDaRm3Q2vqwV0P/ulm7GbV++x0S+w/jNPquzxJV+XtNdAv+x+1sC37xALc8UnUpkmVFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;slug&quot;
+        title=&quot;slug&quot;
+        src=&quot;/static/9ab2b27556f655307cd864875ab7eb78/5a190/slug.png&quot;
+        srcset=&quot;/static/9ab2b27556f655307cd864875ab7eb78/772e8/slug.png 200w,
+/static/9ab2b27556f655307cd864875ab7eb78/e17e5/slug.png 400w,
+/static/9ab2b27556f655307cd864875ab7eb78/5a190/slug.png 800w,
+/static/9ab2b27556f655307cd864875ab7eb78/3dde1/slug.png 1018w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;slug은 자동 생성되거나 직접 입력되는데, 그 간결성을 유지하기 위해서 다음과 같은 몇가지 조건을 가진다. 너무 긴 제목은 가지지 않는다. 전체가 소문자인 영문자(Latin script)이다. 인코딩 되는 문자를 피하기 우위해서 (보기싫은 &lt;code class=&quot;language-text&quot;&gt;%20&lt;/code&gt;) 각 단어는 하이픈 &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt; 혹은 언더스코어 &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt;로 연결한다. 구두점을 사용하지 않으며 접속사 처럼 없어도 되는 단어는 생략한다.&lt;/p&gt;
+&lt;h2 id=&quot;slug라는-단어의-유래&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#slug%EB%9D%BC%EB%8A%94-%EB%8B%A8%EC%96%B4%EC%9D%98-%EC%9C%A0%EB%9E%98&quot; aria-label=&quot;slug라는 단어의 유래 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Slug라는 단어의 유래&lt;/h2&gt;
+&lt;p&gt;언제나 하는 고민이지만, 뜻을 알았으니 여기서 그만 멈춰야할지 잠시 고민 했다. 하지만 결국 단어의 유래도 알아보기로 한다. slug는 원래 뉴스 출판 업계에서 사용하고 있는 용어이다. 그에 대한 wikipedia 문서도 따로 존재했다. &lt;a href=&quot;https://en.wikipedia.org/wiki/Slug_(publishing)&quot;&gt;Slug_(publishing)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;slug는 뉴스기사를 분류하는데 도움이되는 핵심 키워드이다. 예를 들면, 오바마 대통령에 대한 기사는 &lt;code class=&quot;language-text&quot;&gt;OBAMA&lt;/code&gt;라는 slug를 사용했다고 한다. slug의 또 다른 기능은 또 편집자에게 기사에 대한 특정 정보를 알려주기 위한 용도로도 사용 되었다. 예를 들면 &lt;code class=&quot;language-text&quot;&gt;AM&lt;/code&gt;은 아침 뉴스를 위한 기사, &lt;code class=&quot;language-text&quot;&gt;CX&lt;/code&gt; 이전 기사에 대한 수정(correction)을 나타낸다.&lt;/p&gt;
+&lt;p&gt;하지만 그 것의 어원은 따로 있었다. 과거 디지털 프린터의 시대가 오기 전에는 &lt;code class=&quot;language-text&quot;&gt;Hot metal typesetting&lt;/code&gt; 방식(한국어로는?)으로 조판을 하던 시절에 인쇄를 위한 판을 만들기 위해서 작업자가 일일이 금속으로 만들어진 활자를 배치해야 했는데, 그 금속 조각을 &lt;code class=&quot;language-text&quot;&gt;slug&lt;/code&gt;라고 한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 592px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fa347c3e30e08f460723b747c9d5579f/694d5/slugs2-tmagArticle.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdaehwkcH//EABoQAAICAwAAAAAAAAAAAAAAAAIDABEBEBP/2gAIAQEAAQUCJgjLY2CNY5Bev//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAICAwAAAAAAAAAAAAAAAAABECEiMTL/2gAIAQEABj8CMaRts5n/xAAgEAABAgUFAAAAAAAAAAAAAAABABEQITFBUWFxkaHw/9oACAEBAAE/Ibg+yPcPqqXk7JKA3szpxH//2gAMAwEAAgADAAAAENMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHxABAAIBAwUAAAAAAAAAAAAAARExACFBcRBhgZGh/9oACAEBAAE/EJSZjahy0ZoBX7weG/CDG1ppYHoKMWGdNDLKb2fMen//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;slugs2 tmagArticle&quot;
+        title=&quot;slugs2 tmagArticle&quot;
+        src=&quot;/static/fa347c3e30e08f460723b747c9d5579f/694d5/slugs2-tmagArticle.jpg&quot;
+        srcset=&quot;/static/fa347c3e30e08f460723b747c9d5579f/e07e9/slugs2-tmagArticle.jpg 200w,
+/static/fa347c3e30e08f460723b747c9d5579f/066f9/slugs2-tmagArticle.jpg 400w,
+/static/fa347c3e30e08f460723b747c9d5579f/694d5/slugs2-tmagArticle.jpg 592w&quot;
+        sizes=&quot;(max-width: 592px) 100vw, 592px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;gatsby-starter-blog의-기본-slug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-starter-blog%EC%9D%98-%EA%B8%B0%EB%B3%B8-slug&quot; aria-label=&quot;gatsby starter blog의 기본 slug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gatsby-starter-blog의 기본 Slug&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;content/blog&lt;/code&gt; 폴더를 기반으로 폴더의 계층 구조와 파일명을 통해서 slug를 생성한다. 그 예시는 다음과 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;폴더 구조&lt;/th&gt;
+&lt;th&gt;Slug&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;content/blog/2020-11-25/hello-world.md&lt;/td&gt;
+&lt;td&gt;/2020-11-25/hello-world&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;content/blog/hello-world.md&lt;/td&gt;
+&lt;td&gt;/hello-world&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;content/blog/hello-world/index.md&lt;/td&gt;
+&lt;td&gt;/hello-world&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;위에서 볼 수 있듯이 특정 디렉토리 안에서 &lt;code class=&quot;language-text&quot;&gt;hello-world/index.md&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;hello-world.md&lt;/code&gt; 는 동일한 slug를 생성한다. 하지만 이렇게 slug 이름이 겹칠 경우에는 &lt;code class=&quot;language-text&quot;&gt;hello-world.md&lt;/code&gt;가 우선순위를 갖도록 만들어져 있다. 그래서 &lt;code class=&quot;language-text&quot;&gt;hello-world/index.md&lt;/code&gt;는 페이지가 생성 되지 않으니 주의해야 한다.&lt;/p&gt;
+&lt;h2 id=&quot;어떻게-slug를-구성할까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%96%B4%EB%96%BB%EA%B2%8C-slug%EB%A5%BC-%EA%B5%AC%EC%84%B1%ED%95%A0%EA%B9%8C&quot; aria-label=&quot;어떻게 slug를 구성할까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;어떻게 slug를 구성할까?&lt;/h2&gt;
+&lt;p&gt;전에 사용하던 방식도 있었고 여러 블로그를 둘러봤지만 가장 마음에 드는 형식은 만든 날짜를 path로써 포함 시키는 것이다. 예를 들면, &lt;code class=&quot;language-text&quot;&gt;2020/11/25/hello-world&lt;/code&gt; 이렇게 구성하는 것이다. 물론 조금만 손 보면 &lt;code class=&quot;language-text&quot;&gt;2020-11-25-hello-world&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;20201125/hello-world&lt;/code&gt; 등 그 어느 것도 가능하게 만들 수 있다는 점이 &lt;code class=&quot;language-text&quot;&gt;gatsby&lt;/code&gt;의 장점이다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;2020/11/25/hello-world&lt;/code&gt;의 slug 구성은 잘 디자인된 REST API 처럼 보인다. 단지 그렇게 보여서가 아니라, &lt;code class=&quot;language-text&quot;&gt;2020&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;2020/11&lt;/code&gt; 과 같이 접근을 하면 2020년에 작성된 모든 포스트 혹은 2020년 11월에 작성된 모든 포스트를 그룹화해서 보여줄 수 있도록 확장하기 용이하기 때문이다. 나중에 알게 된 사실은 Wordpress에서 사용하던 방식이라는 것이다.&lt;/p&gt;
+&lt;h2 id=&quot;중첩된-폴더-이용하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A4%91%EC%B2%A9%EB%90%9C-%ED%8F%B4%EB%8D%94-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B0&quot; aria-label=&quot;중첩된 폴더 이용하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;중첩된 폴더 이용하기&lt;/h2&gt;
+&lt;p&gt;이 부분에서 조금 고민이 있었는데, 폴더 구조 자체를 &lt;code class=&quot;language-text&quot;&gt;2020/11/25/hello-world/index.md&lt;/code&gt;와 같이 구성하면 현재 상태에서 아무것도 수정할 필요가 없다는 것이 장점이다. 하지만 직접 사용해본 경험에 의하면 폴더가 깊게 중첩될수록 관리가 귀찮아진다. &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt; 파일 하나를 편집하기 위해서는 VS Code를 열고 7번의 클릭을 해야 한다.&lt;/p&gt;
+&lt;p&gt;폴더를 아예 없애는 것 또한 단점이 존재한다. 이미지나 첨부파일들은 별도의 폴더로 나누어져야 관리가 편리하다. 그렇지 않으면 모든 파일들에 겹치지 않는 이름을 할당해야 하는데 가끔씩 그냥 &lt;code class=&quot;language-text&quot;&gt;temp.jpg&lt;/code&gt; 처럼 막 지어쓰고 싶을 때가 있지 않은가?&lt;/p&gt;
+&lt;h2 id=&quot;폴더는-최대한-flat하게-만든다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8F%B4%EB%8D%94%EB%8A%94-%EC%B5%9C%EB%8C%80%ED%95%9C-flat%ED%95%98%EA%B2%8C-%EB%A7%8C%EB%93%A0%EB%8B%A4&quot; aria-label=&quot;폴더는 최대한 flat하게 만든다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;폴더는 최대한 flat하게 만든다&lt;/h2&gt;
+&lt;p&gt;어떻게 구성해야할 것인지에 대해서 다음과 같은 결정을 내렸다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;폴더는 &lt;code class=&quot;language-text&quot;&gt;2020-11-25&lt;/code&gt; 와 같이 날짜 형식으로만 만든다. 이하 서브폴더는 만들지 않는다.&lt;/li&gt;
+&lt;li&gt;즉, 각 포스트를 위한 폴더는 만들지 않는다. &lt;code class=&quot;language-text&quot;&gt;hello-world.md&lt;/code&gt; 와 같이 제목을 가진 파일로 만든다. 경험상 하루에 다수의 포스팅을 하는 경우는 극히 드물기 때문이다. 또한 다른 마이그레이션이 있을 때 모든 파일명이 &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt;일 경우 엄청난 작업이 예상되기 때문이다.&lt;/li&gt;
+&lt;li&gt;slug 는 &lt;code class=&quot;language-text&quot;&gt;YYYY/MM/DD/title&lt;/code&gt;로 구성한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;graphql-데이터-살펴보기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0&quot; aria-label=&quot;graphql 데이터 살펴보기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GraphQL 데이터 살펴보기&lt;/h2&gt;
+&lt;p&gt;드디어 코딩 타임이다. 위에서 결정한 구성을 구현하기 위해서는 slug를 생성하는 코드를 만들어 넣어야 한다. &lt;code class=&quot;language-text&quot;&gt;gatsby-node.js&lt;/code&gt;를 살짝 훔쳐보고 slug에 대한 정보를 얻으 은 뒤 &lt;code class=&quot;language-text&quot;&gt;GraphQL&lt;/code&gt; 콘솔에 접속해서 slug를 조회해 본다.&lt;/p&gt;
+&lt;p&gt;쿼리:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;query&lt;/span&gt; MyQuery &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  allMarkdownRemark &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    edges &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      node &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        fields &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          slug
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;결과:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;allMarkdownRemark&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;edges&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&quot;node&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;fields&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token string&quot;&gt;&quot;slug&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/2020-11-25/deep-javascript/&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&quot;node&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;fields&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token string&quot;&gt;&quot;slug&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/2020-11-23/new-beginnings/&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;extensions&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;graphQL&lt;/code&gt;에 대한 지식이 전무하기에 약간 이해가 되지 않는 부분들이 있지만 짐작을 해본다. 그래프라는 자료 구조를 생각해 볼때 아마도 &lt;code class=&quot;language-text&quot;&gt;allMarkdownRemark&lt;/code&gt;라는 &lt;code class=&quot;language-text&quot;&gt;node&lt;/code&gt;에 연결된 노드들이 각 마크다운 파일에 해당하는 노드일 것이다. 그 자식 노드들은 그래프에서 간선을 나타내는 용어인 &lt;code class=&quot;language-text&quot;&gt;edge&lt;/code&gt;를 모아 놓은 &lt;code class=&quot;language-text&quot;&gt;edges&lt;/code&gt; 배열에 각각 연결이 되어 있을 것이다.그래서 &lt;code class=&quot;language-text&quot;&gt;edges { node }&lt;/code&gt; 라는 쿼리가 있는 것이 아닐까 짐작해 본다. 아무튼 slug는 &lt;code class=&quot;language-text&quot;&gt;node&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;fields&lt;/code&gt; 안에 있고 그 것을 조작해주면 된다.&lt;/p&gt;
+&lt;h2 id=&quot;gatsby-nodejs-에-코드-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-nodejs-%EC%97%90-%EC%BD%94%EB%93%9C-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;gatsby nodejs 에 코드 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gatsby-node.js 에 코드 추가&lt;/h2&gt;
+&lt;p&gt;사실상 코딩은 &lt;code class=&quot;language-text&quot;&gt;replace&lt;/code&gt; 함수를 포함한 한줄의 추가로 끝났다(머쓱). Gatsby에서 제공하는 몇몇 API들의 역할을 파악했다는 것에 더 큰 의의를 두어야겠다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 새로운 node가 생성될 때 호출되는 함수. node를 extend하기 위해서 이 함수를 구현해야한다.&lt;/span&gt;
+exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onCreateNode&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; actions&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; getNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Gatsby는 내부적으로 redux를 통해서 상태를 관리하므로 action을 dispatch해서 상태를 변경한다.&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// actions에 action들이 들어 있고 createNodeField은 그들 중 하나. node를 확장하기 위해 사용한다.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createNodeField &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; actions
+
+  &lt;span class=&quot;token comment&quot;&gt;// MarkdownRemark에 해당하는 노드 일때만 field를 추가한다.&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;internal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;type &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;MarkdownRemark&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// createFilePath는 gatsby-source-filesystem 플러그인이 제공하는 함수로 file path를 URL로 변경해준다.&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 이 함수에서 나온 결과물이 slug가 된다. 그 것을 YYYY/MM/DD/title 형태로 바꿔준다.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; filePath &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createFilePath&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; getNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// NNNN-NN-NN가 등장하는 첫 패턴을 찾은 후, NNNN/NN/NN으로 변경한다.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; filePath&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;\/(\d{4})-(\d{2})-(\d{2})\/&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/$1/$2/$3/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// node에 추가되는 slug은 이 함수에 의해 fields에 추가된다.&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;createNodeField&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; slug&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      value&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 &lt;code class=&quot;language-text&quot;&gt;/2020-11-23/new-beginnings.md&lt;/code&gt;로 생성된 문서를 &lt;code class=&quot;language-text&quot;&gt;/2020/11/23/new-beginnings&lt;/code&gt; 로 접근이 가능하다.&lt;/p&gt;
+&lt;p&gt;끝.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby Blog에 구글 폰트를 입히기]]></title><description><![CDATA[첫 블로그를 만들기 위해서 사용한 gatsby starter인 gatsby-starter-blog는 국내에서 만들어진 것이 아니기 때문에 당연히 한글 폰트가 설정되어 있지 않다. 윈도우 사용자라면 Serif 계열은 “바탕체”, Sans…]]></description><link>https://soopdop.github.io/2020/11/25/change-font-in-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/25/change-font-in-gatsby/</guid><pubDate>Wed, 25 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 619px; &quot;
@@ -3803,177 +3974,6 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&
 &lt;p&gt;결과는 대만족이다. 나눔 고딕이나 바른 고딕과 같은 폰트를 사용해 본 경험에 의하면 그것들은 기본적으로 예쁜 폰트이기는 하나 작은 크기에서는 엉성하게 렌더링 되는 모습을 보여 실망한 적이 있었다. 엉성한 렌더링의 결과는 가독성의 저하를 의미한다. 게다가 MacOS에서 봤을 때는 훌륭했어도, 그 것을 윈도우에서 확인했을 때 ‘이건 무슨 버그가 있는게 틀림없어’라는 생각이 들 정도로 심한 차이를 보인 적도 있었다.&lt;/p&gt;
 &lt;p&gt;다시 말해서 1080p의 낮은 해상도에서도 높은 가독성을 유지하는 폰트가 좋은 폰트라고 볼 수 있다. 그 기준에서 Noto Sans는 추천할만한 폰트이다. 1080p에서 렌더링 된 폰트의 두께가 매우 균일하게 느껴지고, 어느 사이즈에서도 가독성이 크게 나빠지지 않아 상당히 만족하고 있다.&lt;/p&gt;
 &lt;p&gt;어쩌면 Chrome도 업데이트를 거듭하고 있기 때문에 &lt;code class=&quot;language-text&quot;&gt;-webkit-font-smoothing: antialiased&lt;/code&gt; 스타일이 기본 적용 되었거나 잘 동작되게 한것이 이유일 수도 있겠다.&lt;/p&gt;
-&lt;p&gt;끝.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby Blog의 Slug를 구성하기]]></title><description><![CDATA[과거에 작성한 와 에 저장된 포스트를 가져오는 작업을 먼저 해보기로 결정했다.  블로그의 레이아웃을 잡아가는 과정에서 몇 개 이상의 컨텐트가 필요하다고 생각했기 때문이다. 문서 자체는 markdown…]]></description><link>https://soopdop.github.io/2020/11/25/bring-old-post-to-gatsby/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/25/bring-old-post-to-gatsby/</guid><pubDate>Wed, 25 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;과거에 작성한 &lt;code class=&quot;language-text&quot;&gt;Hexo&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;Wordpress&lt;/code&gt;에 저장된 포스트를 가져오는 작업을 먼저 해보기로 결정했다. &lt;code class=&quot;language-text&quot;&gt;Gatsby&lt;/code&gt; 블로그의 레이아웃을 잡아가는 과정에서 몇 개 이상의 컨텐트가 필요하다고 생각했기 때문이다. 문서 자체는 markdown 파일이기에 복사 후 조금 수정해 주면 문제가 없다. 하지만 slug 구성과 폴더의 구조 결정이 우선적으로 이루어져야했다.&lt;/p&gt;
-&lt;h2 id=&quot;slug란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#slug%EB%9E%80&quot; aria-label=&quot;slug란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Slug란?&lt;/h2&gt;
-&lt;p&gt;이미 &lt;code class=&quot;language-text&quot;&gt;slug&lt;/code&gt;라는 단어에 이미 익숙한 사람들이 많을지 모르겠지만, 나에게는 새로운 용어 중 하나였다. wikipedia에서 문서를 찾았지만 역시 민달팽이에 대한 것이었고, url과 함께 검색한 결과로 &lt;a href=&quot;https://en.wikipedia.org/wiki/Clean_URL&quot;&gt;Clean URL&lt;/a&gt; 문서를 찾을 수 있었다. 이 문서를 통해서 slug의 뜻과 유래를 알 수 있었다.&lt;/p&gt;
-&lt;p&gt;slug는 URL의 한 부분으로 &lt;strong&gt;사람이 읽기 쉬운 키워드&lt;/strong&gt;로 페이지를 구분하게 해주는 키워드이다. 특정 리소스 혹은 파일의 이름, 페이지의 제목 등이 될 수 있다. 사람들은 이 slug를 통해서 해당 컨텐트의 내용을 제목을 짐작할 수 있다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9ab2b27556f655307cd864875ab7eb78/3dde1/slug.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 31.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVQY032PywrCMBBF8///IVIXbi1FFxYEbRKs6EbFTXXRFm0mthGrmcS0C5/g4RAGksvcEKUueZ7f6iu+MGWpAJSUl9ZKyrI9z1+S5XLleb0kSbIsA4Cqco/yRTydTUeMBTQaUBrSaMxoyDnjfM6ZM27kMRFCpGnqMi5ZFCelahATEH0QPkAgjgO57cp1R+66+lagsYj62ZAYY5qinyDaRm3Q2vqwV0P/ulm7GbV++x0S+w/jNPquzxJV+XtNdAv+x+1sC37xALc8UnUpkmVFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;slug&quot;
-        title=&quot;slug&quot;
-        src=&quot;/static/9ab2b27556f655307cd864875ab7eb78/5a190/slug.png&quot;
-        srcset=&quot;/static/9ab2b27556f655307cd864875ab7eb78/772e8/slug.png 200w,
-/static/9ab2b27556f655307cd864875ab7eb78/e17e5/slug.png 400w,
-/static/9ab2b27556f655307cd864875ab7eb78/5a190/slug.png 800w,
-/static/9ab2b27556f655307cd864875ab7eb78/3dde1/slug.png 1018w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;slug은 자동 생성되거나 직접 입력되는데, 그 간결성을 유지하기 위해서 다음과 같은 몇가지 조건을 가진다. 너무 긴 제목은 가지지 않는다. 전체가 소문자인 영문자(Latin script)이다. 인코딩 되는 문자를 피하기 우위해서 (보기싫은 &lt;code class=&quot;language-text&quot;&gt;%20&lt;/code&gt;) 각 단어는 하이픈 &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt; 혹은 언더스코어 &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt;로 연결한다. 구두점을 사용하지 않으며 접속사 처럼 없어도 되는 단어는 생략한다.&lt;/p&gt;
-&lt;h2 id=&quot;slug라는-단어의-유래&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#slug%EB%9D%BC%EB%8A%94-%EB%8B%A8%EC%96%B4%EC%9D%98-%EC%9C%A0%EB%9E%98&quot; aria-label=&quot;slug라는 단어의 유래 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Slug라는 단어의 유래&lt;/h2&gt;
-&lt;p&gt;언제나 하는 고민이지만, 뜻을 알았으니 여기서 그만 멈춰야할지 잠시 고민 했다. 하지만 결국 단어의 유래도 알아보기로 한다. slug는 원래 뉴스 출판 업계에서 사용하고 있는 용어이다. 그에 대한 wikipedia 문서도 따로 존재했다. &lt;a href=&quot;https://en.wikipedia.org/wiki/Slug_(publishing)&quot;&gt;Slug_(publishing)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;slug는 뉴스기사를 분류하는데 도움이되는 핵심 키워드이다. 예를 들면, 오바마 대통령에 대한 기사는 &lt;code class=&quot;language-text&quot;&gt;OBAMA&lt;/code&gt;라는 slug를 사용했다고 한다. slug의 또 다른 기능은 또 편집자에게 기사에 대한 특정 정보를 알려주기 위한 용도로도 사용 되었다. 예를 들면 &lt;code class=&quot;language-text&quot;&gt;AM&lt;/code&gt;은 아침 뉴스를 위한 기사, &lt;code class=&quot;language-text&quot;&gt;CX&lt;/code&gt; 이전 기사에 대한 수정(correction)을 나타낸다.&lt;/p&gt;
-&lt;p&gt;하지만 그 것의 어원은 따로 있었다. 과거 디지털 프린터의 시대가 오기 전에는 &lt;code class=&quot;language-text&quot;&gt;Hot metal typesetting&lt;/code&gt; 방식(한국어로는?)으로 조판을 하던 시절에 인쇄를 위한 판을 만들기 위해서 작업자가 일일이 금속으로 만들어진 활자를 배치해야 했는데, 그 금속 조각을 &lt;code class=&quot;language-text&quot;&gt;slug&lt;/code&gt;라고 한다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 592px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/fa347c3e30e08f460723b747c9d5579f/694d5/slugs2-tmagArticle.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdaehwkcH//EABoQAAICAwAAAAAAAAAAAAAAAAIDABEBEBP/2gAIAQEAAQUCJgjLY2CNY5Bev//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAICAwAAAAAAAAAAAAAAAAABECEiMTL/2gAIAQEABj8CMaRts5n/xAAgEAABAgUFAAAAAAAAAAAAAAABABEQITFBUWFxkaHw/9oACAEBAAE/Ibg+yPcPqqXk7JKA3szpxH//2gAMAwEAAgADAAAAENMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHxABAAIBAwUAAAAAAAAAAAAAARExACFBcRBhgZGh/9oACAEBAAE/EJSZjahy0ZoBX7weG/CDG1ppYHoKMWGdNDLKb2fMen//2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;slugs2 tmagArticle&quot;
-        title=&quot;slugs2 tmagArticle&quot;
-        src=&quot;/static/fa347c3e30e08f460723b747c9d5579f/694d5/slugs2-tmagArticle.jpg&quot;
-        srcset=&quot;/static/fa347c3e30e08f460723b747c9d5579f/e07e9/slugs2-tmagArticle.jpg 200w,
-/static/fa347c3e30e08f460723b747c9d5579f/066f9/slugs2-tmagArticle.jpg 400w,
-/static/fa347c3e30e08f460723b747c9d5579f/694d5/slugs2-tmagArticle.jpg 592w&quot;
-        sizes=&quot;(max-width: 592px) 100vw, 592px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;gatsby-starter-blog의-기본-slug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-starter-blog%EC%9D%98-%EA%B8%B0%EB%B3%B8-slug&quot; aria-label=&quot;gatsby starter blog의 기본 slug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gatsby-starter-blog의 기본 Slug&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;content/blog&lt;/code&gt; 폴더를 기반으로 폴더의 계층 구조와 파일명을 통해서 slug를 생성한다. 그 예시는 다음과 같다.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;폴더 구조&lt;/th&gt;
-&lt;th&gt;Slug&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;content/blog/2020-11-25/hello-world.md&lt;/td&gt;
-&lt;td&gt;/2020-11-25/hello-world&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;content/blog/hello-world.md&lt;/td&gt;
-&lt;td&gt;/hello-world&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;content/blog/hello-world/index.md&lt;/td&gt;
-&lt;td&gt;/hello-world&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;위에서 볼 수 있듯이 특정 디렉토리 안에서 &lt;code class=&quot;language-text&quot;&gt;hello-world/index.md&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;hello-world.md&lt;/code&gt; 는 동일한 slug를 생성한다. 하지만 이렇게 slug 이름이 겹칠 경우에는 &lt;code class=&quot;language-text&quot;&gt;hello-world.md&lt;/code&gt;가 우선순위를 갖도록 만들어져 있다. 그래서 &lt;code class=&quot;language-text&quot;&gt;hello-world/index.md&lt;/code&gt;는 페이지가 생성 되지 않으니 주의해야 한다.&lt;/p&gt;
-&lt;h2 id=&quot;어떻게-slug를-구성할까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%96%B4%EB%96%BB%EA%B2%8C-slug%EB%A5%BC-%EA%B5%AC%EC%84%B1%ED%95%A0%EA%B9%8C&quot; aria-label=&quot;어떻게 slug를 구성할까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;어떻게 slug를 구성할까?&lt;/h2&gt;
-&lt;p&gt;전에 사용하던 방식도 있었고 여러 블로그를 둘러봤지만 가장 마음에 드는 형식은 만든 날짜를 path로써 포함 시키는 것이다. 예를 들면, &lt;code class=&quot;language-text&quot;&gt;2020/11/25/hello-world&lt;/code&gt; 이렇게 구성하는 것이다. 물론 조금만 손 보면 &lt;code class=&quot;language-text&quot;&gt;2020-11-25-hello-world&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;20201125/hello-world&lt;/code&gt; 등 그 어느 것도 가능하게 만들 수 있다는 점이 &lt;code class=&quot;language-text&quot;&gt;gatsby&lt;/code&gt;의 장점이다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;2020/11/25/hello-world&lt;/code&gt;의 slug 구성은 잘 디자인된 REST API 처럼 보인다. 단지 그렇게 보여서가 아니라, &lt;code class=&quot;language-text&quot;&gt;2020&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;2020/11&lt;/code&gt; 과 같이 접근을 하면 2020년에 작성된 모든 포스트 혹은 2020년 11월에 작성된 모든 포스트를 그룹화해서 보여줄 수 있도록 확장하기 용이하기 때문이다. 나중에 알게 된 사실은 Wordpress에서 사용하던 방식이라는 것이다.&lt;/p&gt;
-&lt;h2 id=&quot;중첩된-폴더-이용하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A4%91%EC%B2%A9%EB%90%9C-%ED%8F%B4%EB%8D%94-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B0&quot; aria-label=&quot;중첩된 폴더 이용하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;중첩된 폴더 이용하기&lt;/h2&gt;
-&lt;p&gt;이 부분에서 조금 고민이 있었는데, 폴더 구조 자체를 &lt;code class=&quot;language-text&quot;&gt;2020/11/25/hello-world/index.md&lt;/code&gt;와 같이 구성하면 현재 상태에서 아무것도 수정할 필요가 없다는 것이 장점이다. 하지만 직접 사용해본 경험에 의하면 폴더가 깊게 중첩될수록 관리가 귀찮아진다. &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt; 파일 하나를 편집하기 위해서는 VS Code를 열고 7번의 클릭을 해야 한다.&lt;/p&gt;
-&lt;p&gt;폴더를 아예 없애는 것 또한 단점이 존재한다. 이미지나 첨부파일들은 별도의 폴더로 나누어져야 관리가 편리하다. 그렇지 않으면 모든 파일들에 겹치지 않는 이름을 할당해야 하는데 가끔씩 그냥 &lt;code class=&quot;language-text&quot;&gt;temp.jpg&lt;/code&gt; 처럼 막 지어쓰고 싶을 때가 있지 않은가?&lt;/p&gt;
-&lt;h2 id=&quot;폴더는-최대한-flat하게-만든다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8F%B4%EB%8D%94%EB%8A%94-%EC%B5%9C%EB%8C%80%ED%95%9C-flat%ED%95%98%EA%B2%8C-%EB%A7%8C%EB%93%A0%EB%8B%A4&quot; aria-label=&quot;폴더는 최대한 flat하게 만든다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;폴더는 최대한 flat하게 만든다&lt;/h2&gt;
-&lt;p&gt;어떻게 구성해야할 것인지에 대해서 다음과 같은 결정을 내렸다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;폴더는 &lt;code class=&quot;language-text&quot;&gt;2020-11-25&lt;/code&gt; 와 같이 날짜 형식으로만 만든다. 이하 서브폴더는 만들지 않는다.&lt;/li&gt;
-&lt;li&gt;즉, 각 포스트를 위한 폴더는 만들지 않는다. &lt;code class=&quot;language-text&quot;&gt;hello-world.md&lt;/code&gt; 와 같이 제목을 가진 파일로 만든다. 경험상 하루에 다수의 포스팅을 하는 경우는 극히 드물기 때문이다. 또한 다른 마이그레이션이 있을 때 모든 파일명이 &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt;일 경우 엄청난 작업이 예상되기 때문이다.&lt;/li&gt;
-&lt;li&gt;slug 는 &lt;code class=&quot;language-text&quot;&gt;YYYY/MM/DD/title&lt;/code&gt;로 구성한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;graphql-데이터-살펴보기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0&quot; aria-label=&quot;graphql 데이터 살펴보기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GraphQL 데이터 살펴보기&lt;/h2&gt;
-&lt;p&gt;드디어 코딩 타임이다. 위에서 결정한 구성을 구현하기 위해서는 slug를 생성하는 코드를 만들어 넣어야 한다. &lt;code class=&quot;language-text&quot;&gt;gatsby-node.js&lt;/code&gt;를 살짝 훔쳐보고 slug에 대한 정보를 얻으 은 뒤 &lt;code class=&quot;language-text&quot;&gt;GraphQL&lt;/code&gt; 콘솔에 접속해서 slug를 조회해 본다.&lt;/p&gt;
-&lt;p&gt;쿼리:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;query&lt;/span&gt; MyQuery &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  allMarkdownRemark &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    edges &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      node &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        fields &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          slug
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;결과:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;graphql&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-graphql line-numbers&quot;&gt;&lt;code class=&quot;language-graphql&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token string&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&quot;allMarkdownRemark&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;token string&quot;&gt;&quot;edges&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;token string&quot;&gt;&quot;node&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;fields&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-              &lt;span class=&quot;token string&quot;&gt;&quot;slug&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/2020-11-25/deep-javascript/&quot;&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;token string&quot;&gt;&quot;node&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;fields&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-              &lt;span class=&quot;token string&quot;&gt;&quot;slug&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/2020-11-23/new-beginnings/&quot;&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token string&quot;&gt;&quot;extensions&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;graphQL&lt;/code&gt;에 대한 지식이 전무하기에 약간 이해가 되지 않는 부분들이 있지만 짐작을 해본다. 그래프라는 자료 구조를 생각해 볼때 아마도 &lt;code class=&quot;language-text&quot;&gt;allMarkdownRemark&lt;/code&gt;라는 &lt;code class=&quot;language-text&quot;&gt;node&lt;/code&gt;에 연결된 노드들이 각 마크다운 파일에 해당하는 노드일 것이다. 그 자식 노드들은 그래프에서 간선을 나타내는 용어인 &lt;code class=&quot;language-text&quot;&gt;edge&lt;/code&gt;를 모아 놓은 &lt;code class=&quot;language-text&quot;&gt;edges&lt;/code&gt; 배열에 각각 연결이 되어 있을 것이다.그래서 &lt;code class=&quot;language-text&quot;&gt;edges { node }&lt;/code&gt; 라는 쿼리가 있는 것이 아닐까 짐작해 본다. 아무튼 slug는 &lt;code class=&quot;language-text&quot;&gt;node&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;fields&lt;/code&gt; 안에 있고 그 것을 조작해주면 된다.&lt;/p&gt;
-&lt;h2 id=&quot;gatsby-nodejs-에-코드-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-nodejs-%EC%97%90-%EC%BD%94%EB%93%9C-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;gatsby nodejs 에 코드 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gatsby-node.js 에 코드 추가&lt;/h2&gt;
-&lt;p&gt;사실상 코딩은 &lt;code class=&quot;language-text&quot;&gt;replace&lt;/code&gt; 함수를 포함한 한줄의 추가로 끝났다(머쓱). Gatsby에서 제공하는 몇몇 API들의 역할을 파악했다는 것에 더 큰 의의를 두어야겠다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 새로운 node가 생성될 때 호출되는 함수. node를 extend하기 위해서 이 함수를 구현해야한다.&lt;/span&gt;
-exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onCreateNode&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; actions&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; getNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;// Gatsby는 내부적으로 redux를 통해서 상태를 관리하므로 action을 dispatch해서 상태를 변경한다.&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;// actions에 action들이 들어 있고 createNodeField은 그들 중 하나. node를 확장하기 위해 사용한다.&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createNodeField &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; actions
-
-  &lt;span class=&quot;token comment&quot;&gt;// MarkdownRemark에 해당하는 노드 일때만 field를 추가한다.&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;internal&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;type &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;MarkdownRemark&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// createFilePath는 gatsby-source-filesystem 플러그인이 제공하는 함수로 file path를 URL로 변경해준다.&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// 이 함수에서 나온 결과물이 slug가 된다. 그 것을 YYYY/MM/DD/title 형태로 바꿔준다.&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; filePath &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createFilePath&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; getNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;token comment&quot;&gt;// NNNN-NN-NN가 등장하는 첫 패턴을 찾은 후, NNNN/NN/NN으로 변경한다.&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; filePath&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;\/(\d{4})-(\d{2})-(\d{2})\/&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/$1/$2/$3/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;token comment&quot;&gt;// node에 추가되는 slug은 이 함수에 의해 fields에 추가된다.&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;createNodeField&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-      name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; slug&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      value&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이제 &lt;code class=&quot;language-text&quot;&gt;/2020-11-23/new-beginnings.md&lt;/code&gt;로 생성된 문서를 &lt;code class=&quot;language-text&quot;&gt;/2020/11/23/new-beginnings&lt;/code&gt; 로 접근이 가능하다.&lt;/p&gt;
 &lt;p&gt;끝.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[속깊은 JavaScript 빠르게 읽기]]></title><description><![CDATA[201…]]></description><link>https://soopdop.github.io/2020/11/26/deep-javascript/</link><guid isPermaLink="false">https://soopdop.github.io/2020/11/26/deep-javascript/</guid><pubDate>Wed, 25 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;!--
 ## Chapter
 ### Sub chapter 1.1
