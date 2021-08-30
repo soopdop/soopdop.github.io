@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
-Sitemap: https://soopdop.github.io/sitemap.xml
-Host: https://soopdop.github.io
+Disallow: */tags/
+Disallow: */categories/
+
+sitemap: https://gatsby-advanced-starter-demo.netlify.com/sitemap.xml
